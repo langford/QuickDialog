@@ -768,6 +768,7 @@
 				DSTROOT = /tmp/libQuickDialog.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libQuickDialog/libQuickDialog-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /include/QuickDialog;
@@ -785,6 +786,7 @@
 				DSTROOT = /tmp/libQuickDialog.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libQuickDialog/libQuickDialog-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/QuickDialog/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /include/QuickDialog;
