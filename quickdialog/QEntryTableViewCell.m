@@ -123,6 +123,9 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    _textField.accessibilityLabel = _entryElement.title;
+
+
     [self recalculateEntryFieldPosition];
 }
 

@@ -80,6 +80,8 @@
     } else {
         cell.textLabel.text = _title;
         cell.detailTextLabel.text = selectedValue;
+        cell.accessibilityLabel = _title;
+        NSLog(@"-Setting Radio Element to %@",cell.accessibilityLabel);
         cell.imageView.image = nil;
     }
     return cell;

@@ -40,6 +40,8 @@
     cell.selectionStyle = UITableViewCellSelectionStyleBlue;
     NSInteger selectedIndex = _radioElement==nil? _radioSection.selected : _radioElement.selected;
     cell.accessoryType = selectedIndex == _index ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+    cell.accessibilityLabel = _title;
+   
     return cell;
 }
 

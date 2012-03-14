@@ -26,6 +26,7 @@
     [super layoutSubviews];
     self.textLabel.backgroundColor = [UIColor clearColor];
     self.detailTextLabel.backgroundColor = [UIColor clearColor];
+
     CGSize valueSize = CGSizeZero;
     if (self.detailTextLabel.text!=nil)
         valueSize = [self.detailTextLabel.text sizeWithFont:self.detailTextLabel.font];
@@ -43,6 +44,8 @@
     self.detailTextLabel.frame = CGRectMake(
             self.contentView.bounds.size.width - valueSize.width - 10,
             detailsFrame.origin.y, valueSize.width, detailsFrame.size.height);
+    
+    self.detailTextLabel.accessibilityLabel = self.textLabel.text;
 }
 
 @end
